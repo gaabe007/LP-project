@@ -1,0 +1,81 @@
+@use 'background.scss';
+@use 'app.scss';
+@use 'cabeçalho';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  main {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .main__info {
+    width: 100%;
+    max-width: 570px;
+  }
+
+  .main__info p {
+    font-size: 18px;
+    margin: 20px 0 28px;
+  }
+
+  .main__info div {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  .main__info div a, .main__info div button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+
+    transform: skew(-10deg);
+  }
+
+  .main__info div a {
+    background: var(--red);
+  }
+
+  .main__info div button {
+    background: transparent;
+    border: 1px solid var(--green);
+  }
+  
+  :root {
+    --text: #EDF1F7;
+    --red: #C51212;
+    --blue: #0041C2;
+    --green: #14B02D;
+    --yellow: #ffc12b;
+  }
+  
+  body, button, a {
+    color: var(--text);
+    font: 400 1rem "Mukta", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+
+
